@@ -4,6 +4,8 @@ The VirtualBox plugin is able to create
 the OVA or OVF format.
 
 ### Installation
+To install this plugin add this code into your Packer configuration and run [packer init](/packer/docs/commands/init)
+
 ```hcl
 packer {
     required_plugins {
@@ -13,6 +15,12 @@ packer {
         }
     }
 }
+```
+
+Alternatively, you can use `packer plugins install` to manage installation of this plugin.
+
+```sh
+$ packer plugins install github.com/hashicorp/virtualbox
 ```
 
 ### Components
