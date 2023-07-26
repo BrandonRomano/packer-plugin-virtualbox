@@ -2,13 +2,8 @@
 # https://github.com/hashicorp/integration-template#metadata-configuration
 integration {
   name = "VirtualBox"
-  description = "TODO"
+  description = "The VirtualBox plugin creates VirtualBox virtual machines and export them to an OVA or OVF format."
   identifier = "packer/BrandonRomano/virtualbox"
-  component {
-    type = "builder"
-    name = "VirtualBox Snapshot"
-    slug = "vm"
-  }
   component {
     type = "builder"
     name = "VirtualBox ISO"
@@ -18,5 +13,10 @@ integration {
     type = "builder"
     name = "VirtualBox OVF/OVA"
     slug = "ovf"
+  }
+  component {
+    type = "builder"
+    name = "VirtualBox Snapshot"
+    slug = "vm"
   }
 }
